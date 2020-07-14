@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --pri-0: #1A2E7D;
+  --pri-1: #2541B2;
+  --pri-2: #667AC9;
+
+  --acc-0: #04859E;
+  --acc-1: #06BEE1;
+  --acc-2: #51D2EA;
+
+  --gre-0: #010B20;
+  --gre-1: #021336;
+  --gre-2: #021A4C;
+  --gre-3: #9AA8C4;
+  --gre-4: #CDD3E2;
+
+  /* Fonts */
+  --Font1: "Inter", sans-serif;
+  --Font2: "Noto Serif", serif;
+
+  font-size: 14px;
+
+  --container-width: 1160px;
+  --device-lg: 300px;
+  --device-md: 760px;
+  --device-sm: 600px;
+
+  --header-height: 80px;
+  --footer-height: 80px;
+}
+
+* {
+  color: #222222;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: var(--Font1);
+  box-sizing: border-box;
+}
+
+.container {
+  width: var(--container-width);
+  margin: 0 auto;
+}
