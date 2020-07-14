@@ -1,9 +1,21 @@
+/* ==================== Header ==================== */
+header{
+     height: var(--header-height);
+}
+
+header .container{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 100%;
+     width: 1250px;
+}
+
 /* ==================== Footer ==================== */
 footer{
      color: #ffffff;
      background-color: #222222;
      height: var(--footer-height);
-     font-size: 1.8rem
 }
 
 footer .container{
