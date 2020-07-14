@@ -57,7 +57,7 @@
      line-height: 1;
 }
 
-.co-container {
+.hero .co-container {
      position: relative;
      width: 864px;
      height: 550px;
@@ -108,4 +108,5 @@
      height: 56px;
      bottom: 2.7rem;
      left: -9.9rem;
+     box-shadow: 0px 10px 20px rgba(2, 19, 54, 0.1);
 }
