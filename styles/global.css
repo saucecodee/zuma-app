@@ -1,19 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 :root {
-  --pri-0: #1a2e7d;
-  --pri-1: #2541b2;
-  --pri-2: #667ac9;
+  --pri-0: #2541b2;
 
-  --acc-0: #04859e;
-  --acc-1: #06bee1;
-  --acc-2: #51d2ea;
+  --acc-0: #06bee1;
+  --acc-1: #51d2ea;
 
-  --gre-0: #010b20;
-  --gre-1: #021336;
-  --gre-2: #021a4c;
-  --gre-3: #9aa8c4;
-  --gre-4: #cdd3e2;
+  --gre-0: #021336;
+  --gre-1: #cdd3e2;
+  --gre-2: #F3F4F8;
+
+  /* 1440 */
+  /* 140  1160  140 */
 
   /* Fonts */
   --Font1: "Inter", sans-serif;
@@ -33,7 +31,8 @@
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
-  outline: none;
+  outline: 2px solid red ;
+  outline: 0;
   font-family: var(--Font1);
   box-sizing: border-box;
 }
@@ -44,7 +43,16 @@ html {
   font-weight: normal;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .container {
   width: var(--container-width);
   margin: 0 auto;
+}
+
+
+::-webkit-scrollbar{
+  width: 0;
 }

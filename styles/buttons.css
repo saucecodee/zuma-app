@@ -1,6 +1,6 @@
 button {
      background: white;
-     color: var(--pri-1);
+     color: var(--pri-0);
      width: 150px;
      height: 50px;
      border-radius: 10px;
@@ -10,9 +10,18 @@ button {
 
 button.but-1 {
      color: white;
-     background: var(--pri-1);
+     background: var(--pri-0);
 }
 
 button.but-2 {
      border: 2px solid rgba(37, 65, 178, 0.75);
+}
+
+input {
+     background: #ffffff;
+     border: 0.5px solid rgba(34, 34, 34, 0.35);
+     box-sizing: border-box;
+     border-radius: 5px;
+     padding: 0 1.6rem;
+     height: 50px;
 }

@@ -1,9 +1,9 @@
 /* ==================== Header ==================== */
-header{
+header {
      height: var(--header-height);
 }
 
-header .container{
+header .container {
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -12,15 +12,21 @@ header .container{
 }
 
 /* ==================== Footer ==================== */
-footer{
+footer {
      color: #ffffff;
      background-color: #222222;
      height: var(--footer-height);
 }
 
-footer .container{
+footer .container {
      display: flex;
      align-items: center;
      justify-content: space-between;
      height: 100%;
+}
+
+/* ==================== Footer ==================== */
+.b-deco {
+     position: absolute;
+     background: var(--acc-1);
 }

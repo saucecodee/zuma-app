@@ -1,0 +1,111 @@
+.hero {
+     padding: 10rem 0 0;
+}
+
+.hero .container {
+     position: relative;
+}
+
+.hero h1 {
+     color: var(--pri-0);
+     position: absolute;
+     left: 0rem;
+     top: 2rem;
+     width: 469px;
+     height: 122px;
+     font-weight: 600;
+     font-size: 5rem;
+     line-height: 6.1rem;
+     z-index: 3;
+}
+
+.hero h1::before {
+     content: "";
+     position: absolute;
+     top: 13rem;
+     background: var(--acc-1);
+     width: 10rem;
+     height: 0.8rem;
+}
+
+.hero p {
+     width: 520px;
+     line-height: 3.2rem;
+}
+
+.hero p:first-child {
+     margin-bottom: 2.4rem;
+}
+
+.hero form{
+     margin: 1.6rem 0;
+}
+
+.hero input{
+     width: 36.7rem;
+     margin-right: 0.4rem;
+}
+
+.hero input::placeholder{
+     color: rgba(34, 34, 34, 0.25);
+}
+
+.hero .info {
+     color: var(--pri-0);
+     font-weight: 600;
+     font-size: 1.4rem;
+     line-height: 1;
+}
+
+.co-container {
+     position: relative;
+     width: 864px;
+     height: 550px;
+     background: var(--gre-2);
+     border-radius: 5px;
+     padding: 16.6rem 0 0 4.8rem;
+     margin-left: 9.9rem;
+     margin-bottom: 15rem;
+}
+
+.hero-phones-container {
+     outline: 2px sold purple;
+     position: absolute;
+     max-width: 39rem;
+     right: 0;
+}
+
+.hero-phones {
+     outline: 2px sold purple;
+     position: relative;
+     max-width: 39rem;
+}
+
+.hero-phones .img-2 {
+     position: absolute;
+     top: 6.8rem;
+     left: -25.4rem;
+     z-index: -1;
+}
+
+.hero-phones .img-1 {
+     position: absolute;
+     top: 3.6rem;
+     left: -44.7rem;
+     z-index: 2;
+}
+
+.de-1 {
+     width: 296px;
+     height: 80px;
+     top: -2.8rem;
+     right: -2.4rem;
+     z-index: -1;
+}
+
+.de-2 {
+     width: 197px;
+     height: 56px;
+     bottom: 2.7rem;
+     left: -9.9rem;
+}
