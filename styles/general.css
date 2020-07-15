@@ -31,7 +31,13 @@ footer .container {
      background: var(--acc-1);
 }
 
-
+.b-patt {
+     position: absolute;
+     width: 16rem;
+     height: 16rem;
+     background-image: radial-gradient(#CDD3E2 0.15rem, transparent 0);
+     background-size: 1.6rem 1.6rem;
+}
 
 .grey-box {
      position: relative;
@@ -47,8 +53,6 @@ footer .container {
 .grey-box p:first-child {
      margin-bottom: 1.4rem;
 }
-
-
 
 .s-title {
      color: var(--pri-0);

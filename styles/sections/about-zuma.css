@@ -17,6 +17,7 @@
      position: absolute;
      top: 4rem;
      right: -8rem;
+     z-index: 2;
 }
 
 .w-i-zuma .deco-1 {
@@ -25,6 +26,12 @@
      right: -11.8rem;
      bottom: -5rem;
      z-index: -1;
+}
+
+.w-i-zuma .patt-1{
+     width: 8rem;
+     right: 3.2rem;
+     bottom: 3rem;
 }
 
 
@@ -51,4 +58,11 @@
      position: absolute;
      top: 4.8rem;
      left: -5rem;
+}
+
+.w-c-z-do .patt-1{
+     height: 8rem;
+     width: 8rem;
+     left: 3.2rem;
+     bottom: 3.2rem;
 }

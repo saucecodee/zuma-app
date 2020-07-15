@@ -24,6 +24,7 @@
      position: absolute;
      top: -8.4rem;
      right: 9.9rem;
+     z-index: 3;
 }
 
 .f-s-section .deco-1 {
@@ -32,6 +33,11 @@
      right: 4.1rem;
      bottom: -4.9rem;
      z-index: -1;
+}
+
+.f-s-section .patt-1{
+     right: 30.9rem;
+     bottom: 5.6rem;
 }
 
 
@@ -59,4 +65,9 @@
 .f-s-section .alt .deco-1 {
      left: 31.1rem;
      bottom: -4.7rem;
+}
+
+.f-s-section .alt .patt-1{
+     left: 30.9rem;
+     bottom: 5.6rem;
 }
