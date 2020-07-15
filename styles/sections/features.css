@@ -33,3 +33,30 @@
      bottom: -4.9rem;
      z-index: -1;
 }
+
+
+
+.f-s-section .alt .s-title {
+     text-align: right;
+     right: 0;
+}
+
+.f-s-section .alt .s-title::before {
+     right: 0;
+}
+
+.f-s-section .alt .grey-box {
+     padding: 16.8rem 4.8rem 4.8rem 54rem;
+     margin-right: auto;
+     margin-left: 0;
+}
+
+.f-s-section .alt .z-img {
+     top: -8.4rem;
+     left: 9.9rem;
+}
+
+.f-s-section .alt .deco-1 {
+     left: 31.1rem;
+     bottom: -4.7rem;
+}
