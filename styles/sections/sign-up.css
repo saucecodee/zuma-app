@@ -1,0 +1,48 @@
+.s-m-up .container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: #ffffff;
+     background: radial-gradient(203.76% 852.68% at 11.9% -49.71%, #06bee1 0%, #1e88e5 100%);
+     border-radius: 50px;
+     margin-bottom: 12rem;
+     padding-left: 9.6rem;
+}
+
+.s-m-up .container::before {
+     content: "";
+     position: absolute;
+     width: 928px;
+     height: 347px;
+     left: 11.6rem;
+     top: 12.7rem;
+     background: rgba(2, 19, 54, 0.25);
+     filter: blur(100px);
+     border-radius: 40px;
+     z-index: -1;
+}
+
+.s-m-up h2 {
+     font-weight: 600;
+     font-size: 50px;
+     line-height: 61px;
+     margin-bottom: 2.4rem;
+}
+
+.s-m-up p {
+     width: 459px;
+     font-size: 2.2rem;
+     font-weight: normal;
+     line-height: 27px;
+     margin-bottom: 2.4rem;
+}
+
+.s-m-up input {
+     background-color: transparent;
+     width: 371px;
+     border: 0.15rem solid #ffffff;
+}
+
+.s-m-up input::placeholder {
+     color: #ffffff;
+}

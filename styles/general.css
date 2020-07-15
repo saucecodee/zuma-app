@@ -14,8 +14,8 @@ header .container {
 /* ==================== Footer ==================== */
 footer {
      color: #ffffff;
-     background-color: #222222;
      height: var(--footer-height);
+     background-color: #222222;
 }
 
 footer .container {
