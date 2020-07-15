@@ -1,0 +1,73 @@
+.t-hype h2 {
+     color: var(--pri-0);
+     font-weight: 600;
+     font-size: 50px;
+     line-height: 6.1rem;
+     margin-bottom: 3.2rem;
+}
+
+.t-hype .cards-row {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 2.4rem;
+     margin-bottom: 16rem;
+}
+
+.t-hype .card {
+     background-color: #ffffff;
+     position: relative;
+     padding: 2.4rem;
+     border-radius: 1rem;
+     width: 371px;
+     height: 216px;
+}
+
+.t-hype .card::before {
+     content: "";
+     position: absolute;
+     width: 38.7rem;
+     height: 15.5rem;
+     top: 8.5rem;
+     left: 0.8rem;
+     background: rgba(2, 19, 54, 0.05);
+     filter: blur(7.5rem);
+     border-radius: 1rem;
+     z-index: -1;
+}
+
+.t-hype .card .header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 2.2rem;
+}
+
+.t-hype .card .header .user-d {
+     display: flex;
+     align-items: center;
+}
+
+.t-hype .card .header .user-ns {
+     display: flex;
+     flex-direction: column;
+     margin-left: 1.6rem;
+}
+
+.t-hype .card .header .user-ud {
+     font-weight: 600;
+     font-size: 1.6rem;
+     line-height: 1.9rem;
+}
+
+.t-hype .card .header .user-ua {
+     color: var(--pri-0);
+     font-size: 1.4rem;
+     line-height: 1.7rem;
+     margin-top: 0.2rem;
+}
+
+.t-hype .card p {
+     font-size: 1.4rem;
+     line-height: 2.4rem;
+     color: #000000;
+}
