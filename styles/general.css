@@ -30,3 +30,41 @@ footer .container {
      position: absolute;
      background: var(--acc-1);
 }
+
+
+
+.grey-box {
+     position: relative;
+     background: var(--gre-2);
+     border-radius: 5px;
+     width: 96.2rem;
+}
+
+.grey-box p {
+     line-height: 3.2rem;
+}
+
+.grey-box p:first-child {
+     margin-bottom: 1.4rem;
+}
+
+
+
+.s-title {
+     color: var(--pri-0);
+     position: absolute;
+     height: 122px;
+     font-weight: 600;
+     font-size: 5rem;
+     line-height: 6.1rem;
+     z-index: 3;
+}
+
+.s-title::before {
+     content: "";
+     position: absolute;
+     top: 13rem;
+     background: var(--acc-1);
+     width: 11rem;
+     height: 0.8rem;
+}

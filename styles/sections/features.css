@@ -1,0 +1,35 @@
+.f-s-section .s-title {
+     top: 2.2rem;
+     font-size: 3.6rem;
+     line-height: 4.4rem;
+}
+
+.f-s-section .s-title::before {
+     top: 9.5rem;
+     width: 19.9rem;
+}
+
+.f-s-section .grey-box {
+     height: 34.4rem;
+     padding: 16.8rem 54rem 4.8rem 4.8rem;
+     margin-left: auto;
+     margin-bottom: 34.4rem;
+}
+
+.f-s-section p{
+     width: 37.3rem;
+}
+
+.f-s-section .z-img {
+     position: absolute;
+     top: -8.4rem;
+     right: 9.9rem;
+}
+
+.f-s-section .deco-1 {
+     width: 182px;
+     height: 152px;
+     right: 4.1rem;
+     bottom: -4.9rem;
+     z-index: -1;
+}
