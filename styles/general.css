@@ -72,3 +72,37 @@ footer .container {
      width: 11rem;
      height: 0.8rem;
 }
+
+
+.toast{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 5rem;
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-color: var(--acc-1);
+     z-index: 100;
+     animation: toast 6s ease-out ;
+     transform: translateY(-100%);
+}
+
+@keyframes toast{
+     10%, 90%{
+          transform: translateY(0);
+     }
+     100%{
+          transform: translateY(-100%);
+     }
+}
+
+.toast .container{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: var(--container-width);
+     margin: 0 auto;
+     text-align: center;
+}
