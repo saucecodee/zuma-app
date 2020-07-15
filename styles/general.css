@@ -80,7 +80,7 @@ footer .container {
      justify-content: center;
      height: 5rem;
      width: 100%;
-     position: absolute;
+     position: fixed;
      top: 0;
      left: 0;
      background-color: var(--acc-1);
