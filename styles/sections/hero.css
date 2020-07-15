@@ -75,11 +75,12 @@
 }
 
 .de-1 {
+     position: absolute;
      width: 296px;
      height: 80px;
      top: -2.8rem;
      right: -2.4rem;
-     z-index: -1;
+     z-index: -80;
 }
 
 .de-2 {

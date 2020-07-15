@@ -1,15 +1,12 @@
 <?php
 session_start();
 
-$db = mysqli_connect('localhost', 'root', '', 'zuma');
+$db = mysqli_connect('localhost', 'id14349303_root', '3pMXLRFbQwu=T%%+', 'id14349303_zuma');
 
 // Check connection
 if (!$db) {
      die("Connection failed: " . mysqli_connect_error());
 }
-
-echo "Connected successfully";
-
 
 // only process the form if $_POST is not empty
 if (isset($_POST['submit'])) {
@@ -27,4 +24,5 @@ if (isset($_POST['submit'])) {
           $_SESSION["message"] = "Sorry, please try again";
           header("location: index.php");
      }
+
 }

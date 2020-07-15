@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,17 +11,14 @@
 </head>
 
 <body>
-     <?php
-     session_start();
-     if (!isset($_SESSION['message'])) :
-     ?>
+     <!--==================== Toast ==================== -->
+
+     <?php if (isset($_SESSION['message'])) : ?>
           <div class="toast">
-               <div class="container">
-                         <?php
-                         echo $_SESSION['message'];
-                         unset($_SESSION['message']);
-                         ?>
-               </div>
+               <?php
+               echo $_SESSION['message'];
+               unset($_SESSION['message']);
+               ?>
           </div>
      <?php endif ?>
 
@@ -304,14 +303,9 @@
           </div>
      </footer>
 
-     <?php if (isset($_SESSION['message'])) : ?>
-          <div class="toast">
-               <?php
-               echo $_SESSION['message'];
-               unset($_SESSION['message']);
-               ?>
-          </div>
-     <?php endif ?>
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script> -->
+     <script src="./js/gsap.js"></script>
+     <script src="./js/anime.js"></script>
 </body>
 
 </html>
