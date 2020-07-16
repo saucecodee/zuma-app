@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 gsap
      .timeline({
           defaults: {
@@ -49,6 +51,7 @@ gsap.fromTo(".grey-box", {
      opacity: 0,
      scale: 0.7
 }, {
+     scrollTriger: ".grey-box",
      duration: 1,
      delay: 0.4,
      opacity: 1,
