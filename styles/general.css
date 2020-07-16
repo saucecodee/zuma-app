@@ -64,7 +64,7 @@ footer .container {
      z-index: 3;
 }
 
-.s-title::before {
+.s-title:before {
      content: "";
      position: absolute;
      top: 13rem;

@@ -1,13 +1,50 @@
-.hero {
-     padding: 10rem 0 0;
+.h-bg {
+     background-color: red;
+     background: radial-gradient(203.76% 852.68% at 11.9% -49.71%, #06bee1 0%, #1e88e5 100%);
+     position: absolute;
+     display: flex;
+     height: 46rem;
+     width: 100vw;
+     z-index: -5;
 }
 
-.hero .s-title{
-     top: 2rem;
+.h-bg::before {
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-image: radial-gradient(#ffffff 0.2rem, transparent 0);
+     background-size: 1.6rem 1.6rem;
+     opacity: 0.2;
+}
+
+.h-bg div {
+     background: #ffffff;
+     height: 100%;
+     width: 33.4%;
+}
+
+.hero {
+     padding: 21.7rem 0 0;
+}
+
+.hero .s-title {
+     color: #ffffff;
+     top: -8.5rem;
+     left: 10rem;
 }
 
 .hero .s-title::before {
+     display: none;
      width: 10rem;
+}
+
+.hero .grey-box {
+     width: 86.4rem;
+     height: 43.2rem;
+     padding: 4.8rem 0 0 4.8rem;
+     margin-left: 9.9rem;
+     margin-bottom: 15rem;
 }
 
 .hero .grey-box p {
@@ -19,16 +56,16 @@
      margin-bottom: 2.4rem;
 }
 
-.hero form{
+.hero form {
      margin: 1.6rem 0;
 }
 
-.hero input{
+.hero input {
      width: 36.7rem;
      margin-right: 0.4rem;
 }
 
-.hero input::placeholder{
+.hero input::placeholder {
      color: rgba(34, 34, 34, 0.25);
 }
 
@@ -39,14 +76,6 @@
      line-height: 1;
 }
 
-.hero .grey-box {
-     width: 864px;
-     height: 550px;
-     padding: 16.6rem 0 0 4.8rem;
-     margin-left: 9.9rem;
-     margin-bottom: 15rem;
-}
-
 .hero-phones-container {
      outline: 2px sold purple;
      position: absolute;
@@ -55,21 +84,21 @@
 }
 
 .hero-phones {
-     outline: 2px sold purple;
      position: relative;
      max-width: 39rem;
 }
 
 .hero-phones .img-2 {
      position: absolute;
-     top: 6.8rem;
+     top: -4.8rem;
      left: -25.4rem;
      z-index: -1;
 }
 
 .hero-phones .img-1 {
      position: absolute;
-     top: 3.6rem;
+     /* top: 3.6rem; */
+     top: -8rem;
      left: -44.7rem;
      z-index: 2;
 }
@@ -80,7 +109,7 @@
      height: 80px;
      top: -2.8rem;
      right: -2.4rem;
-     z-index: -80;
+     z-index: -2;
 }
 
 .de-2 {
@@ -92,13 +121,13 @@
      z-index: 2;
 }
 
-.hero .patt-1{
+.hero .patt-1 {
      top: 11.1rem;
      right: 5.4rem;
      height: 32.8rem;
 }
 
-.hero .patt-2{
+.hero .patt-2 {
      bottom: 1.6rem;
      left: 2.4rem;
      height: 8rem;
