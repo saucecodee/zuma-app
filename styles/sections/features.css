@@ -22,8 +22,8 @@
 
 .f-s-section .z-img {
      position: absolute;
-     top: -8.4rem;
-     right: 9.9rem;
+     top: -32rem;
+     right: -14.1rem;
      z-index: 3;
 }
 
@@ -39,6 +39,8 @@
      right: 30.9rem;
      bottom: 5.6rem;
 }
+
+
 
 
 
@@ -58,8 +60,8 @@
 }
 
 .f-s-section .alt .z-img {
-     top: -8.4rem;
-     left: 9.9rem;
+     top: -32rem;
+     left: -13.9rem;
 }
 
 .f-s-section .alt .deco-1 {

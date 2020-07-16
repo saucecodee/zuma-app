@@ -51,7 +51,6 @@ gsap.fromTo(".grey-box", {
      opacity: 0,
      scale: 0.7
 }, {
-     scrollTriger: ".grey-box",
      duration: 1,
      delay: 0.4,
      opacity: 1,
@@ -126,3 +125,16 @@ gsap.fromTo(".hero .de-2", {
      width: 197
 });
 
+
+
+
+gsap.to(".w-c-z-do .grey-box", {
+     scrollTriger: {
+          trigger: ".w-c-z-do .grey-box",
+          start: "top center",
+          markers: true,
+          toggleActions: "restart pause resume reset"
+     },
+     opacity: 0.3,
+     delay: 2,
+})
