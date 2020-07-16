@@ -128,13 +128,13 @@ gsap.fromTo(".hero .de-2", {
 
 
 
-gsap.to(".w-c-z-do .grey-box", {
-     scrollTriger: {
-          trigger: ".w-c-z-do .grey-box",
-          start: "top center",
-          markers: true,
-          toggleActions: "restart pause resume reset"
-     },
-     opacity: 0.3,
-     delay: 2,
-})
+// gsap.to(".w-c-z-do .grey-box", {
+//      scrollTriger: {
+//           trigger: ".w-c-z-do .grey-box",
+//           start: "top center",
+//           markers: true,
+//           toggleActions: "restart pause resume reset"
+//      },
+//      opacity: 0.3,
+//      delay: 2,
+// })

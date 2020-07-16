@@ -1,11 +1,31 @@
 button {
+     position: relative;
      background: white;
      color: var(--pri-0);
      width: 150px;
      height: 50px;
      border-radius: 10px;
      font-weight: 600;
+     line-height: 1;
      padding: 1.4rem 2.4rem;
+     overflow: hidden;
+     cursor: pointer;
+     transition: 0.3s ease-in-out;
+}
+
+button::before {
+     content: "";
+     background-color: rgba(34, 34, 34, 0.15);
+     display: none;
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+}
+
+button:hover::before {
+     display: block;
 }
 
 button.but-1 {
