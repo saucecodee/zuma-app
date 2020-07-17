@@ -13,9 +13,9 @@
      position: absolute;
      width: 100%;
      height: 100%;
-     background-image: radial-gradient(#ffffff 0.2rem, transparent 0);
+     background-image: radial-gradient(#ffffff 0.5rem, transparent 0);
      background-size: 1.6rem 1.6rem;
-     opacity: 0.2;
+     opacity: 0.05;
 }
 
 .h-bg div {
