@@ -135,8 +135,8 @@ function init() {
      }, {
           scrollTrigger: {
                trigger: ".w-i-zuma",
-               start: "top bottom-=400",
-               end: "bottom bottom-=400",
+               start: "top bottom",
+               end: "bottom bottom-=100",
                toggleActions: "restart none resume reset"
           },
           duration: 1,
@@ -151,8 +151,8 @@ function init() {
      }, {
           scrollTrigger: {
                trigger: ".w-c-z-do",
-               start: "top bottom-=400",
-               end: "bottom bottom-=400",
+               start: "top bottom",
+               end: "bottom bottom-=100",
                toggleActions: "restart none resume reset"
           },
           duration: 1,
@@ -167,8 +167,8 @@ function init() {
      }, {
           scrollTrigger: {
                trigger: ".f1",
-               start: "top bottom-=400",
-               end: "bottom bottom-=400",
+               start: "top bottom",
+               end: "bottom bottom-=100",
                toggleActions: "restart none resume reset"
           },
           duration: 1,
@@ -183,8 +183,8 @@ function init() {
      }, {
           scrollTrigger: {
                trigger: ".f2",
-               start: "top bottom-=400",
-               end: "bottom bottom-=400",
+               start: "top bottom",
+               end: "bottom bottom-=100",
                toggleActions: "restart none resume reset"
           },
           duration: 1,
@@ -199,8 +199,8 @@ function init() {
      }, {
           scrollTrigger: {
                trigger: ".f3",
-               start: "top bottom-=400",
-               end: "bottom bottom-=400",
+               start: "top bottom",
+               end: "bottom bottom-=100",
                toggleActions: "restart none resume reset"
           },
           duration: 1,
@@ -214,39 +214,38 @@ function init() {
           .timeline({
                scrollTrigger: {
                     trigger: ".screens",
-                    start: "top bottom-=400",
-                    end: "bottom bottom-=400",
+                    start: "top top+=500",
+                    end: "bottom bottom-=100",
                     toggleActions: "restart none resume reset"
                },
                defaults: {
                     duration: 0.5,
-                    yoyo: true
                }
           })
           .add('start')
           .from('.s1', {
-               y: 100,
-               
+               y: 200,
+               opacity: 0,
           }, 'start')
           .from('.s2', {
-               y: 100,
-               
+               y: 200,
+               opacity: 0,
           }, 'start+=0.2')
           .from('.s3', {
-               y: 100,
-               
+               y: 200,
+               opacity: 0, 
           }, 'start+=0.3')
           .from('.s4', {
-               y: 100,
-               
+               y: 200,
+               opacity: 0,
           }, 'start+=0.4')
           .from('.s5', {
-               y: 100,
-               
+               y: 200,
+               opacity: 0,
           }, 'start+=0.5')
           .from('.s6', {
-               y: 100,
-               
+               y: 200,
+               opacity: 0,
           }, 'start+=0.6')
 
 }
