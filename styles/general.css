@@ -35,7 +35,7 @@ footer .container {
      position: absolute;
      width: 16rem;
      height: 16rem;
-     background-image: radial-gradient(#CDD3E2 0.15rem, transparent 0);
+     background-image: radial-gradient(#cdd3e2 0.15rem, transparent 0);
      background-size: 1.6rem 1.6rem;
 }
 
@@ -73,8 +73,7 @@ footer .container {
      height: 0.8rem;
 }
 
-
-.toast{
+.toast {
      display: flex;
      align-items: center;
      justify-content: center;
@@ -85,24 +84,59 @@ footer .container {
      left: 0;
      background-color: var(--acc-1);
      z-index: 100;
-     animation: toast 6s ease-out ;
+     animation: toast 6s ease-out;
      transform: translateY(-100%);
 }
 
-@keyframes toast{
-     10%, 90%{
+@keyframes toast {
+     10%,
+     90% {
           transform: translateY(0);
      }
-     100%{
+     100% {
           transform: translateY(-100%);
      }
 }
 
-.toast .container{
+.toast .container {
      display: flex;
      align-items: center;
      justify-content: center;
      width: var(--container-width);
      margin: 0 auto;
      text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+     header .container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 100%;
+          width: 100%;
+     }
+
+     .b-deco {
+          display: none;
+     }
+
+     .b-patt {
+         display: none;
+     }
+
+     .grey-box {
+          background-color: white;
+          width: 100%;
+     }
+
+     .s-title {
+          position: relative;
+          height: auto;
+          font-size: 2.4rem;
+          line-height: 2.9rem;
+     }
+     
+     .s-title:before {
+          display: none;
+     }
 }

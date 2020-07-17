@@ -133,3 +133,64 @@
      left: 2.4rem;
      height: 8rem;
 }
+
+
+
+
+@media only screen and (max-width: 600px) {
+     .h-bg {
+          display: none;
+     }
+
+     .hero {
+          padding: 0 0 0;
+     }
+
+     .hero .s-title {
+          position: relative;
+          color: var(--pri-0);
+          top: -8.5rem;
+          left: 0rem;
+          width: 100%;
+     }
+
+     .hero .grey-box {
+          width: 100%;
+          height: initial;
+          padding: 0;
+          margin-left: 0;
+          margin-bottom: 5rem;
+     }
+
+     .hero .grey-box p {
+          width: 100%;
+          line-height: 3.2rem;
+     }
+
+     .hero form {
+          margin: 1.6rem 0;
+     }
+
+     .hero input {
+          width: 100%;
+          margin-right: 0;
+     }
+
+     .hero button{
+          margin-left: auto;
+     }
+
+
+
+     .hero .info {
+          color: var(--pri-0);
+          font-weight: 600;
+          font-size: 1.4rem;
+          line-height: 1;
+     }
+
+     .hero-phones-container {
+          display: none;
+     }
+
+}

@@ -73,3 +73,48 @@
      left: 30.9rem;
      bottom: 5.6rem;
 }
+
+
+@media only screen and (max-width: 600px) {
+     .f-s-section .s-title {
+          font-size: 2.4rem;
+          line-height: 2.9rem;
+          top: 0;
+     }
+     
+     .f-s-section .grey-box {
+          height: 34.4rem;
+          padding: 0;
+          margin-left: auto;
+          margin-bottom: 34.4rem;
+     }
+     
+     .f-s-section p{
+          width: 100%;
+     }
+     
+     .f-s-section .z-img {
+          position: relative;
+          top: 0;
+          right: 0;
+          display: block;
+          width: 100%;
+     }
+
+     
+     
+     .f-s-section .alt .grey-box {
+          padding: 0;
+          margin-right: 0;
+          margin-left: 0;
+     }
+     
+     .f-s-section .alt .z-img {
+          position: relative;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+     }
+     
+}
