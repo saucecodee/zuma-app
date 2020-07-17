@@ -1,0 +1,28 @@
+.gallery{
+     margin-bottom: 5rem;
+}
+
+.screens {
+     padding-top: 15rem;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+     .screens {
+          padding-top: 5rem;
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+     }
+
+     .screens img{
+          display: block;
+          width: 100%;
+          transform: scale(1.2);
+          margin-bottom: 2rem;
+     }
+
+     .screens img:nth-child(even){
+          margin-top: -2rem;
+     }
+}
