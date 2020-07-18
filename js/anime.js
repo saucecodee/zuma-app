@@ -1,5 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const tr = ""
+
 function init() {
      gsap
           .timeline({
@@ -36,7 +38,7 @@ function init() {
 
 
 
-     gsap.fromTo("header", {
+     gsap.from("header", {
           opacity: 0,
           scale: 0.7
      }, {
@@ -116,14 +118,11 @@ function init() {
           width: 296
      });
 
-     gsap.fromTo(".hero .de-2", {
+     gsap.from(".hero .de-2", {
           duration: 0.5,
           opacity: 0.7,
-          width: 0
-     }, {
+          width: 0,
           delay: 0.9,
-          opacity: 1,
-          width: 197
      });
 
 
@@ -249,8 +248,6 @@ function init() {
           }, 'start+=0.6')
 
 }
-
-
 
 window.addEventListener("load", () => {
      init()
