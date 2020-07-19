@@ -1,15 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const tr = ""
-
-function init() {
-     gsap.timeline({
+function intro() {
+     const introTl = gsap.timeline({
           defaults: {
                duration: 2.5
           },
-          // delay: 4
      })
-          .add('start')
+
+     introTl.add('start')
           .to('.h-bg .b-3', {
                yPercent: 300,
                scale: 1,
@@ -49,7 +47,7 @@ function init() {
                ease: "back.inOut(2)",
                onComplete: () => $$(".grey-box").forEach(e => e.style.transform = "none")
           }, "start+=0.5")
-          .from(".grey-box p", {
+          .from(".hero .grey-box p", {
                duration: 0.5,
                opacity: 0,
                y: 36,
@@ -82,128 +80,94 @@ function init() {
                width: 0,
           }, "start+=0.9");
 
+     return introTl
+}
 
-
-
-     gsap.fromTo(".w-i-zuma", {
-          opacity: 0,
-          scale: 0.7
-     }, {
+function section(selector, inverse = false) {
+     const sectTl = gsap.timeline({
+          defaults: {
+               duration: 2.5
+          },
           scrollTrigger: {
-               trigger: ".w-i-zuma",
-               start: "top bottom",
+               trigger: selector,
+               start: "top center",
+               end: "bottom center-=100",
+               markers: true,
+               toggleActions: "restart none resume reset"
+          },
+     })
+
+     sectTl.add("start")
+          .from(`${selector} .grey-box`, {
+               opacity: 0,
+               scale: 0.7,
+               duration: 0.7,
+               ease: "back.inOut(2)"
+          }, "start")
+          .from(`${selector} .grey-box p`, {
+               duration: 0.5,
+               opacity: 0,
+               y: 36,
+          }, "start+=0.5")
+          .from(`${selector} .s-title`, {
+               duration: 0.5,
+               opacity: 0,
+               x: inverse ? 100 : -100
+          }, "start+=.5")
+          .from(`${selector} .z-img`, {
+               duration: 1,
+               opacity: 0,
+               ease: "back.inOut(2)",
+               x: inverse ? -100 : 100
+          }, "start+=0.5")
+          .from(`${selector} .deco-1`, {
+               duration: 0.6,
+               opacity: 0.7,
+               height: 0
+          }, "start+=1")
+
+
+
+
+     return sectTl
+}
+
+function init() {
+
+     intro()
+
+     section(".w-c-z-do")
+     section(".w-i-zuma")
+     section(".f1")
+     section(".f2", true)
+     section(".f3")
+
+     gsap.from(".screens img", {
+          scrollTrigger: {
+               trigger: ".screens",
+               start: "top top+=500",
                end: "bottom bottom-=100",
                toggleActions: "restart none resume reset"
           },
+          y: 300,
           duration: 1,
-          opacity: 1,
-          scale: 1,
-          ease: "back.inOut(2)",
+          opacity: 0,
+          stagger: 0.2,
      })
 
-     gsap.fromTo(".w-c-z-do", {
-          opacity: 0,
-          scale: 0.7
-     }, {
+     gsap.from(".feat-img", {
           scrollTrigger: {
                trigger: ".w-c-z-do",
-               start: "top bottom",
-               end: "bottom bottom-=100",
+               start: "bottom bottom",
+               end: "bottom center-=100",
                toggleActions: "restart none resume reset"
           },
-          duration: 1,
-          opacity: 1,
-          scale: 1,
-          ease: "back.inOut(2)",
-     })
-
-     gsap.fromTo(".f1", {
+          delay: 7,
+          y: 60,
+          duration: 0.7,
           opacity: 0,
-          scale: 0.7
-     }, {
-          scrollTrigger: {
-               trigger: ".f1",
-               start: "top bottom",
-               end: "bottom bottom-=100",
-               toggleActions: "restart none resume reset"
-          },
-          duration: 1,
-          opacity: 1,
-          scale: 1,
-          ease: "back.inOut(2)",
+          stagger: 0.3,
      })
-
-     gsap.fromTo(".f2", {
-          opacity: 0,
-          scale: 0.7
-     }, {
-          scrollTrigger: {
-               trigger: ".f2",
-               start: "top bottom",
-               end: "bottom bottom-=100",
-               toggleActions: "restart none resume reset"
-          },
-          duration: 1,
-          opacity: 1,
-          scale: 1,
-          ease: "back.inOut(2)",
-     })
-
-     gsap.fromTo(".f3", {
-          opacity: 0,
-          scale: 0.7
-     }, {
-          scrollTrigger: {
-               trigger: ".f3",
-               start: "top bottom",
-               end: "bottom bottom-=100",
-               toggleActions: "restart none resume reset"
-          },
-          duration: 1,
-          opacity: 1,
-          scale: 1,
-          ease: "back.inOut(2)",
-     })
-
-
-     gsap
-          .timeline({
-               scrollTrigger: {
-                    trigger: ".screens",
-                    start: "top top+=500",
-                    end: "bottom bottom-=100",
-                    toggleActions: "restart none resume reset"
-               },
-               defaults: {
-                    duration: 0.5,
-               }
-          })
-          .add('start')
-          .from('.s1', {
-               y: 200,
-               opacity: 0,
-          }, 'start')
-          .from('.s2', {
-               y: 200,
-               opacity: 0,
-          }, 'start+=0.2')
-          .from('.s3', {
-               y: 200,
-               opacity: 0,
-          }, 'start+=0.3')
-          .from('.s4', {
-               y: 200,
-               opacity: 0,
-          }, 'start+=0.4')
-          .from('.s5', {
-               y: 200,
-               opacity: 0,
-          }, 'start+=0.5')
-          .from('.s6', {
-               y: 200,
-               opacity: 0,
-          }, 'start+=0.6')
-
 }
 
 window.onload = () => {
