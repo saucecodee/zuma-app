@@ -3,12 +3,12 @@ gsap.registerPlugin(ScrollTrigger);
 const tr = ""
 
 function init() {
-     gsap
-          .timeline({
-               defaults: {
-                    duration: 2.5
-               }
-          })
+     gsap.timeline({
+          defaults: {
+               duration: 2.5
+          },
+          // delay: 4
+     })
           .add('start')
           .to('.h-bg .b-3', {
                yPercent: 300,
@@ -35,95 +35,52 @@ function init() {
                scale: 1,
                ease: "bounce"
           }, 'start+=0.3')
-
-
-
-     gsap.from("header", {
-          opacity: 0,
-          scale: 0.7
-     }, {
-          duration: 1,
-          delay: 0.4,
-          opacity: 1,
-          scale: 1,
-          ease: "back.inOut(2)",
-          onComplete: () => $$(".grey-box").forEach(e => e.style.transform = "none")
-     });
-
-     gsap.fromTo(".hero .grey-box", {
-          opacity: 0,
-          scale: 0.7
-     }, {
-          duration: 1,
-          delay: 0.4,
-          opacity: 1,
-          scale: 1,
-          ease: "back.inOut(2)",
-          onComplete: () => $$(".grey-box").forEach(e => e.style.transform = "none")
-     });
-
-
-     gsap.fromTo(".grey-box p", {
-          duration: 1,
-          opacity: 0,
-          y: 18
-     }, {
-          delay: 1.2,
-          opacity: 1,
-          y: 0
-     });
-
-
-
-     gsap.fromTo(".hero .s-title", {
-          duration: 1,
-          opacity: 0,
-          x: -50
-     }, {
-          delay: 1.3,
-          opacity: 1,
-          x: 0
-     });
-
-
-     gsap.fromTo(".hero-phones .img-1", {
-          duration: 1,
-          opacity: 0,
-          x: 50
-     }, {
-          delay: 1.1,
-          opacity: 1,
-          x: 0,
-          ease: "back.inOut(2)"
-     });
-
-     gsap.fromTo(".hero-phones .img-2", {
-          duration: 1,
-          opacity: 0,
-          x: 50
-     }, {
-          delay: 1.4,
-          opacity: 1,
-          x: 0,
-          ease: "back.inOut(2)"
-     });
-
-     gsap.fromTo(".hero .de-1", {
-          duration: 0.6,
-          opacity: 0.7,
-          width: 0
-     }, {
-          delay: 1.5,
-          opacity: 1,
-          width: 296
-     });
-
-     gsap.from(".hero .de-2", {
-          duration: 0.5,
-          opacity: 0.7,
-          width: 0,
-          delay: 0.9,
-     });
+          .from("header", {
+               opacity: 0,
+               // scale: 0.7,
+               y: 80,
+               duration: 1,
+               ease: "back.inOut(2)",
+          }, "start+=0.7")
+          .from(".hero .grey-box", {
+               opacity: 0,
+               scale: 0.7,
+               duration: 1,
+               ease: "back.inOut(2)",
+               onComplete: () => $$(".grey-box").forEach(e => e.style.transform = "none")
+          }, "start+=0.5")
+          .from(".grey-box p", {
+               duration: 0.5,
+               opacity: 0,
+               y: 36,
+          }, "start+=1.2")
+          .from(".hero .s-title", {
+               duration: 0.5,
+               opacity: 0,
+               x: -100
+          }, "start+=1.3")
+          .from(".hero-phones .img-1", {
+               duration: 1,
+               opacity: 0,
+               ease: "back.inOut(2)",
+               x: 100
+          }, "start+=1.1")
+          .from(".hero-phones .img-2", {
+               duration: 1,
+               opacity: 0,
+               ease: "back.inOut(2)",
+               x: 100
+          }, "start+=1.4")
+          .from(".hero .de-1", {
+               duration: 0.6,
+               opacity: 0.7,
+               width: 0
+          }, "start+=1.9")
+          .from(".hero .de-2", {
+               duration: 0.5,
+               opacity: 0.7,
+               width: 0,
+          }, "start+=0.9");
 
 
 
@@ -232,7 +189,7 @@ function init() {
           }, 'start+=0.2')
           .from('.s3', {
                y: 200,
-               opacity: 0, 
+               opacity: 0,
           }, 'start+=0.3')
           .from('.s4', {
                y: 200,
@@ -249,6 +206,10 @@ function init() {
 
 }
 
-window.addEventListener("load", () => {
-     init()
-})
+window.onload = () => {
+     setTimeout(() => {
+          $("#loader").style.display = "none";
+          $("#site-wrapper").style.display = "block";
+          init()
+     }, 3000);
+}

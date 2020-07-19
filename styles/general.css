@@ -1,4 +1,34 @@
 /* ==================== Header ==================== */
+#loader {
+     display: grid;
+     place-content: center;
+     height: 100vh;
+     width: 100vw;
+}
+
+.loader-logo {
+     opacity: 0;
+     transition: 2s ease-in;
+     animation: loader 4s ease-out;
+}
+
+@keyframes loader {
+     0% {
+          transform: translateX(-200px);
+          opacity: 0;
+     }
+     20%,
+     80% {
+          transform: translateX(0);
+          opacity: 1;
+     }
+     100% {
+          transform: translateX(200px);
+          opacity: 0;
+     }
+}
+
+/* ==================== Header ==================== */
 header {
      height: var(--header-height);
 }
@@ -11,7 +41,7 @@ header .container {
      width: 1260px;
 }
 
-header .mob-logo{
+header .mob-logo {
      display: none;
 }
 
@@ -125,7 +155,7 @@ footer .container {
      }
 
      .b-patt {
-         display: none;
+          display: none;
      }
 
      .grey-box {
@@ -140,20 +170,20 @@ footer .container {
           line-height: 2.9rem;
           margin-bottom: 1.6rem;
      }
-     
+
      .s-title:before {
           display: none;
      }
 
-     footer{
+     footer {
           height: initial;
      }
 
-     footer div{
+     footer div {
           font-size: 1.4rem !important;
      }
 
-     footer .container div:first-child{
+     footer .container div:first-child {
           margin-bottom: 1rem;
      }
 
@@ -162,11 +192,11 @@ footer .container {
           flex-direction: column;
      }
 
-     header svg{
+     header svg {
           display: none;
      }
 
-     header .mob-logo{
+     header .mob-logo {
           display: block;
      }
 }
