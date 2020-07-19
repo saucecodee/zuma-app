@@ -50,6 +50,7 @@ body{
 }
 
 #site-wrapper{
+  overflow-x: hidden;
   display: none;
 }
 

@@ -91,8 +91,8 @@ function section(selector, inverse = false) {
           scrollTrigger: {
                trigger: selector,
                start: "top center",
-               end: "bottom center-=100",
-               markers: true,
+               end: "bottom center",
+               // markers: true,
                toggleActions: "restart none resume reset"
           },
      })
