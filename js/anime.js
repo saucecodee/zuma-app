@@ -92,7 +92,6 @@ function section(selector, inverse = false) {
                trigger: selector,
                start: "top center",
                end: "bottom center",
-               // markers: true,
                toggleActions: "restart none resume reset"
           },
      })
@@ -132,15 +131,51 @@ function section(selector, inverse = false) {
      return sectTl
 }
 
-function init() {
+function socials() {
+     const socialsTl = gsap.timeline({
+          defaults: {
+               duration: 2.5
+          },
+          scrollTrigger: {
+               trigger: ".t-hype",
+               start: "top center",
+               end: "bottom center",
+               toggleActions: "restart none resume reset"
+          },
+     })
 
-     intro()
+     socialsTl.add("start")
+          .from(".t-hype h2", {
+               duration: 0.5,
+               opacity: 0,
+               x: -100,
+          }, "start")
+          .from(".t-hype .card", {
+               duration: 0.5,
+               opacity: 0,
+               scale: 0.5,
+               y: 100,
+               stagger: 0.2,
+          }, "start+=0.3")
 
-     section(".w-c-z-do")
-     section(".w-i-zuma")
-     section(".f1")
-     section(".f2", true)
-     section(".f3")
+
+
+     return socialsTl
+}
+
+
+function screens() {
+     gsap.from(".gallery .s-title", {
+          scrollTrigger: {
+               trigger: ".gallery",
+               start: "top top+=500",
+               end: "bottom bottom-=100",
+               toggleActions: "restart none resume reset"
+          },
+          duration: 0.5,
+          opacity: 0,
+          x: -100,
+     }, "start")
 
      gsap.from(".screens img", {
           scrollTrigger: {
@@ -155,6 +190,59 @@ function init() {
           stagger: 0.2,
      })
 
+
+     return gsap
+}
+
+function cta() {
+     const ctaTl = gsap.timeline({
+          defaults: {
+               duration: 2.5
+          },
+          scrollTrigger: {
+               trigger: ".s-m-up",
+               start: "top center",
+               end: "bottom center",
+               toggleActions: "restart none resume reset"
+          },
+     })
+
+     ctaTl.add("start")
+          .from(".s-m-up .container", {
+               opacity: 0,
+               scale: 0.7,
+               duration: 0.7,
+               ease: "back.inOut(2)"
+          }, "start")
+          .from(".s-m-up h2", {
+               duration: 0.5,
+               opacity: 0,
+               x: -100
+          }, "start+=0.5")
+          .from(".s-m-up p", {
+               duration: 0.5,
+               opacity: 0,
+               y: 36,
+          }, "start+=0.7")
+          .from(".s-m-up .p-img", {
+               duration: 0.3,
+               opacity: 0,
+               y: 30
+          }, "start+=1")
+
+
+
+
+     return ctaTl
+}
+
+function init() {
+
+     intro()
+
+     section(".w-c-z-do")
+     section(".w-i-zuma")
+
      gsap.from(".feat-img", {
           scrollTrigger: {
                trigger: ".w-c-z-do",
@@ -168,6 +256,16 @@ function init() {
           opacity: 0,
           stagger: 0.3,
      })
+
+     section(".f1")
+     section(".f2", true)
+     section(".f3")
+
+     screens()
+
+     socials()
+
+     cta()
 }
 
 window.onload = () => {

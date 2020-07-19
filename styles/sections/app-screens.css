@@ -23,11 +23,9 @@
      .screens img{
           transform: scale(1.2);
           margin-bottom: 2rem;
-          transform: translateY(-10px);
-          opacity: 0.7;
      }
 
      .screens img:nth-child(even){
-          margin-top: -2rem;
+          transform: translateY(-3rem);
      }
 }
