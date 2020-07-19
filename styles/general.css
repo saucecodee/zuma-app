@@ -1,9 +1,13 @@
 /* ==================== Header ==================== */
 #loader {
+     position: fixed;
+     top: 0;
+     left: 0;
      display: grid;
      place-content: center;
      height: 100vh;
      width: 100vw;
+     overflow: hidden;
 }
 
 .loader-logo {

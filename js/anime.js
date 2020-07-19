@@ -92,7 +92,7 @@ function section(selector, inverse = false) {
                trigger: selector,
                start: "top center",
                end: "bottom center",
-               toggleActions: "restart none resume reset"
+               toggleActions: "restart none resume reverse"
           },
      })
 
@@ -140,7 +140,7 @@ function socials() {
                trigger: ".t-hype",
                start: "top center",
                end: "bottom center",
-               toggleActions: "restart none resume reset"
+               toggleActions: "restart none resume reverse"
           },
      })
 
@@ -170,7 +170,7 @@ function screens() {
                trigger: ".gallery",
                start: "top top+=500",
                end: "bottom bottom-=100",
-               toggleActions: "restart none resume reset"
+               toggleActions: "restart none resume reverse"
           },
           duration: 0.5,
           opacity: 0,
@@ -182,7 +182,7 @@ function screens() {
                trigger: ".screens",
                start: "top top+=500",
                end: "bottom bottom-=100",
-               toggleActions: "restart none resume reset"
+               toggleActions: "restart none resume reverse"
           },
           y: 300,
           duration: 1,
@@ -203,7 +203,7 @@ function cta() {
                trigger: ".s-m-up",
                start: "top center",
                end: "bottom center",
-               toggleActions: "restart none resume reset"
+               toggleActions: "restart none resume reverse"
           },
      })
 
@@ -225,9 +225,10 @@ function cta() {
                y: 36,
           }, "start+=0.7")
           .from(".s-m-up .p-img", {
-               duration: 0.3,
+               duration: 1,
                opacity: 0,
-               y: 30
+               y: 100,
+               ease: "back.inOut(2)",
           }, "start+=1")
 
 
@@ -239,9 +240,8 @@ function cta() {
 function init() {
 
      intro()
-
-     section(".w-c-z-do")
      section(".w-i-zuma")
+     section(".w-c-z-do", true)
 
      gsap.from(".feat-img", {
           scrollTrigger: {
@@ -260,11 +260,8 @@ function init() {
      section(".f1")
      section(".f2", true)
      section(".f3")
-
      screens()
-
      socials()
-
      cta()
 }
 
