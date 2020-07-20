@@ -63,6 +63,17 @@ footer .container {
      height: 100%;
 }
 
+footer div{
+     font-size: 1.6rem !important;
+}
+
+footer div a{
+     font-size: 1.8rem !important;
+     font-weight: 600;
+     color: #ffffff;
+     text-decoration: none;
+}
+
 /* ==================== Footer ==================== */
 .b-deco {
      position: absolute;
@@ -185,6 +196,10 @@ footer .container {
 
      footer div {
           font-size: 1.4rem !important;
+     }
+
+     footer div a{
+          font-size: 1.6rem !important;
      }
 
      footer .container div:first-child {

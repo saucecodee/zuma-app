@@ -210,9 +210,9 @@ function cta() {
      ctaTl.add("start")
           .from(".s-m-up .container", {
                opacity: 0,
-               scale: 0.7,
-               duration: 0.7,
-               ease: "back.inOut(2)"
+               scale: 0.9,
+               duration: 0.6,
+               ease: "back.inOut(3)"
           }, "start")
           .from(".s-m-up h2", {
                duration: 0.5,
@@ -229,7 +229,7 @@ function cta() {
                opacity: 0,
                y: 100,
                ease: "back.inOut(2)",
-          }, "start+=1")
+          }, "start+=0.5")
 
 
 
